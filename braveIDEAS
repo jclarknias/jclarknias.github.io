@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brave IDEAS Lab</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 60px;
+      background: #020617;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Brave IDEAS Lab</h1>
+  <p>Culturally grounded, human-centered AI</p>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>
+    The Brave IDEAS Lab explores culture, computation, and AI through AfroComputation Praxis.
+  </p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <p>CARE • Ase • Symbolic AI • Human-Centered Evaluation</p>
+</section>
+
+</body>
+</html>
