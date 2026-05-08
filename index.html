@@ -1,44 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Brave IDEAS Lab</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #0f172a;
-      color: white;
-    }
-    header {
-      text-align: center;
-      padding: 60px;
-      background: #020617;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Brave IDEAS Lab</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* NAVBAR */
+nav {
+  background: #020617;
+  padding: 15px 30px;
+}
+nav a {
+  color: #f8fafc;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+  .logo {
+  width: 140px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #020617;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+}
+
+/* PROJECT CARDS */
+.project {
+  background: #020617;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.meta {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.year {
+  margin-top: 40px;
+  color: #cbd5f5;
+}
+</style>
 </head>
 
 <body>
 
+<nav>
+  <a href="#">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
-  <h1>Brave IDEAS Lab</h1>
-  <p>Culturally grounded, human-centered AI</p>
+  <img src="logo.jpg" alt="Brave IDEAS Lab Logo" class="logo">
+  <h1>Brave I.D.E.A.S. Lab</h1>
+  <p class="tagline">Identity, Data, Ethics, AI, and Society</p>
 </header>
 
 <section>
-  <h2>About</h2>
+  <h2>Mission</h2>
   <p>
-    The Brave IDEAS Lab explores culture, computation, and AI through AfroComputation Praxis.
+    The Brave IDEAS Lab designs and develops interaction technologies and practices
+    that promote socially responsible and culturally meaningful computing artifacts.
+    Our work centers culture as a technical foundation, advancing human-centered AI
+    systems grounded in identity, language, and community knowledge.
   </p>
 </section>
 
-<section>
+<section id="projects">
   <h2>Projects</h2>
-  <p>CARE • Ase • Symbolic AI • Human-Centered Evaluation</p>
+
+  <h3 class="year">2026</h3>
+
+  <div class="project">
+    <h3>CARE: Culturally Aligned AI for Reflective Creativity</h3>
+    <div class="meta">
+      Students: Kamili Campbell, Janelle Yankey, Thane Douglass • AAAI Spring Symposium 2026
+    </div>
+    <p>
+      CARE is a culturally grounded generative AI system that supports creative reflection
+      through symbolic mediation. Drawing on Adinkra symbols and proverb-based reasoning,
+      the system positions AI as a partner in sensemaking rather than a prescriptive tool.
+      This work demonstrates how cultural knowledge systems can be embedded into AI design
+      to support meaningful and context-aware creativity.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Symbolic Mediation for Tactical Decision Support</h3>
+    <div class="meta">
+      Student: Lashaun Baddol • AAAI 2026 Spring Symposium
+    </div>
+    <p>
+      This project introduces a neuro-symbolic framework that transforms language model
+      outputs into structured operational symbols for decision-making contexts. By pairing
+      textual explanations with symbolic representations, the system supports human-centered
+      interpretation in time-sensitive environments.
+    </p>
+  </div>
+
+  <h3 class="year">2025</h3>
+
+  <div class="project">
+    <h3>Haptic Feedback for Tonal Language Learning</h3>
+    <div class="meta">
+      Student: Kamili Campbell • NSEA 2025 • Howard Research Month
+    </div>
+    <p>
+      This project explores the use of haptic feedback to support tonal language learning.
+      Using a game-based interface, users receive vibrational cues aligned with pitch
+      variation, enabling a multi-sensory approach to learning languages such as Yoruba.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>CROSS AWARE: Pedestrian Distraction and Safety</h3>
+    <div class="meta">
+      Students: Kamili Campbell, Sarah Kabbo • DCQI 2025
+    </div>
+    <p>
+      CROSS AWARE is a smartwatch-based system for studying pedestrian distraction and
+      group dynamics. The platform captures in-the-moment behavioral reflections and
+      integrates wearable alerts to promote safer navigation in high-traffic environments.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>AAVE Slang in Large Language Models</h3>
+    <div class="meta">
+      Students: Thane Douglass, Ashley Hanes • AfriCHI 2025
+    </div>
+    <p>
+      This project evaluates how large language models interpret African American
+      Vernacular English (AAVE). Findings highlight challenges in cultural context,
+      nuance, and linguistic representation, emphasizing the need for more inclusive
+      AI development practices.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>AfroComputation Praxis in Sentiment Analysis</h3>
+    <div class="meta">
+      Students: Kaylin Clay, Myla Williams, Kamili Campbell • AfriCHI 2025
+    </div>
+    <p>
+      This work applies AfroComputation Praxis to develop a culturally fluent sentiment
+      lexicon for AAVE. The project demonstrates how culturally grounded approaches
+      can reshape computational tools and challenge dominant assumptions in language processing.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Àṣẹ Across the Diaspora</h3>
+    <div class="meta">
+      Student: Thane Douglass • AfriCHI 2025
+    </div>
+    <p>
+      This case study examines the layered meanings of Àṣẹ across diasporic contexts and
+      explores how computational systems can better represent culturally embedded concepts
+      through contextual annotation and retrieval-based approaches.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>AfroComputation Praxis in Computing Education</h3>
+    <div class="meta">
+      Paper: BICE 2025
+    </div>
+    <p>
+      This project presents a culturally grounded data science curriculum that integrates
+      AfroComputation Praxis into computing education. It highlights how identity, culture,
+      and technical skill-building can be meaningfully aligned.
+    </p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: jaye.nias@howard.edu</p>
 </section>
 
 </body>
