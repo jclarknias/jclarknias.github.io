@@ -1,3 +1,4 @@
+<!-- Replace your full index.html with this -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,47 +11,48 @@ body {
   margin: 0;
   background: #0f172a;
   color: #f8fafc;
+  line-height: 1.6;
 }
 
-/* NAVBAR */
 nav {
   background: #020617;
-  padding: 15px 30px;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
 }
+
 nav a {
   color: #f8fafc;
-  margin-right: 20px;
+  margin-right: 24px;
   text-decoration: none;
   font-weight: bold;
 }
-  .logo {
-  width: 140px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
 
-/* HEADER */
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
   background: #020617;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
 }
 
 h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .tagline {
   color: #94a3b8;
-  margin-top: 10px;
+  font-size: 1.1rem;
 }
 
-/* SECTIONS */
 section {
-  max-width: 1000px;
+  max-width: 1050px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 45px 20px;
 }
 
 h2 {
@@ -58,28 +60,46 @@ h2 {
   padding-bottom: 10px;
 }
 
-/* PROJECT CARDS */
-.project {
+.research-area {
   background: #020617;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
+  padding: 28px;
+  margin-top: 30px;
+  border-radius: 14px;
   border: 1px solid #334155;
 }
 
-.project h3 {
+.project {
+  background: #0f172a;
+  padding: 20px;
+  margin-top: 18px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.project h4 {
   margin-top: 0;
+  font-size: 1.15rem;
 }
 
 .meta {
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   margin-bottom: 10px;
 }
 
-.year {
-  margin-top: 40px;
-  color: #cbd5f5;
+.outputs {
+  margin-top: 12px;
+  font-size: 0.92rem;
+}
+
+.outputs a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.outputs a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
@@ -88,12 +108,13 @@ h2 {
 
 <nav>
   <a href="#">Home</a>
+  <a href="#research">Research Areas</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <header>
-  <img src="logo.jpg" alt="Brave IDEAS Lab Logo" class="logo">
+  <img src="logo.png" alt="Brave IDEAS Lab Logo" class="logo">
   <h1>Brave I.D.E.A.S. Lab</h1>
   <p class="tagline">Identity, Data, Ethics, AI, and Society</p>
 </header>
@@ -103,123 +124,252 @@ h2 {
   <p>
     The Brave IDEAS Lab designs and develops interaction technologies and practices
     that promote socially responsible and culturally meaningful computing artifacts.
-    Our work centers culture as a technical foundation, advancing human-centered AI
-    systems grounded in identity, language, and community knowledge.
+    Our work centers culture as a technical foundation for human-centered AI, data,
+    interaction design, and computing education.
   </p>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+<section id="research">
+  <h2>Research Areas</h2>
 
-  <h3 class="year">2026</h3>
-
-  <div class="project">
-    <h3>CARE: Culturally Aligned AI for Reflective Creativity</h3>
-    <div class="meta">
-      Students: Kamili Campbell, Janelle Yankey, Thane Douglass • AAAI Spring Symposium 2026
-    </div>
+  <div class="research-area">
+    <h3>Culture, Language, and AI</h3>
     <p>
-      CARE is a culturally grounded generative AI system that supports creative reflection
-      through symbolic mediation. Drawing on Adinkra symbols and proverb-based reasoning,
-      the system positions AI as a partner in sensemaking rather than a prescriptive tool.
-      This work demonstrates how cultural knowledge systems can be embedded into AI design
-      to support meaningful and context-aware creativity.
+      This area examines how AI systems interpret, misinterpret, and represent culturally
+      situated language. Projects in this area focus on African American Vernacular English,
+      diasporic terminology, sentiment analysis, and culturally grounded approaches to NLP.
     </p>
+<div class="project">
+  <h4>Adinkra Symbols through Generative AI: A Semiotic Analysis of Emoji-Based Translation</h4>
+
+  <div class="meta">
+    Students: Kamili Campbell, Thane Douglass, Janell Yankey • FAccT 2026 (Accepted)
   </div>
 
-  <div class="project">
-    <h3>Symbolic Mediation for Tactical Decision Support</h3>
-    <div class="meta">
-      Student: Lashaun Baddol • AAAI 2026 Spring Symposium
-    </div>
+  <p>
+    This project examines how generative AI systems translate Adinkra symbols into emoji-based
+    representations. Using semiotic analysis, the work explores how culturally grounded symbols
+    are abstracted, simplified, or transformed through contemporary AI systems and visual vocabularies.
+    The project contributes to broader discussions of representation, cultural meaning, and symbolic
+    translation in human-centered AI.
+  </p>
+
+  <div class="outputs">
+    <strong>Publication:</strong>
+
     <p>
-      This project introduces a neuro-symbolic framework that transforms language model
-      outputs into structured operational symbols for decision-making contexts. By pairing
-      textual explanations with symbolic representations, the system supports human-centered
-      interpretation in time-sensitive environments.
+      Nias, J., Aryal, S. K., Campbell, K., Cooper, K., Douglass, T., & Yankey, J. (2026).
+      <i>Adinkra Symbols through Generative AI: A Semiotic Analysis of Emoji-Based Translation.</i>
+      Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAccT 2026).
     </p>
+
+    <a href="#">
+      Paper (Coming Soon)
+    </a>
+  </div>
+</div>
+<div class="project">
+  <h4>From Culture to Code: AAVE Slang in Large Language Models</h4>
+
+  <div class="meta">
+    Students: Thane Douglass, Ashley Hanes • AfriCHI 2025
   </div>
 
-  <h3 class="year">2025</h3>
+  <p>
+    This project evaluates how large language models interpret African American
+    Vernacular English slang across culturally significant contexts. The work highlights
+    challenges in cultural nuance, linguistic representation, and community-centered AI design.
+  </p>
 
-  <div class="project">
-    <h3>Haptic Feedback for Tonal Language Learning</h3>
-    <div class="meta">
-      Student: Kamili Campbell • NSEA 2025 • Howard Research Month
-    </div>
+  <div class="outputs">
+    <strong>Publication:</strong>
+
     <p>
-      This project explores the use of haptic feedback to support tonal language learning.
-      Using a game-based interface, users receive vibrational cues aligned with pitch
-      variation, enabling a multi-sensory approach to learning languages such as Yoruba.
+      Nias, J., Brandon, D., Douglass, T., Hanes, A., Patterson, N., & Cooper, K. (2025).
+      <i>From Culture to Code: An Intersectional Analysis of AAVE Slang in Large Language Models.</i>
+      Proceedings of the 5th Biennial African Human Computer Interaction Conference, 141–150.
     </p>
+
+    <a href="https://dl.acm.org/doi/pdf/10.1145/3757232.3757243" target="_blank">
+      Paper
+    </a>
+
+    |
+    
+    <a href="#">
+      Poster
+    </a>
+  </div>
+</div>
+
+<div class="project">
+  <h4>AfroComputation in Action: Building a Culturally Fluent AAVE Sentiment Lexicon</h4>
+
+  <div class="meta">
+    Students: Kaylin Clay, Myla Williams, Kamili Campbell • AfriCHI 2025
   </div>
 
-  <div class="project">
-    <h3>CROSS AWARE: Pedestrian Distraction and Safety</h3>
-    <div class="meta">
-      Students: Kamili Campbell, Sarah Kabbo • DCQI 2025
-    </div>
+  <p>
+    This project applies AfroComputation Praxis to the development of a culturally fluent
+    AAVE sentiment lexicon. It demonstrates how Black language, annotation practices,
+    and critical reflection can inform more culturally responsive language technologies.
+  </p>
+
+  <div class="outputs">
+    <strong>Publication:</strong>
+
     <p>
-      CROSS AWARE is a smartwatch-based system for studying pedestrian distraction and
-      group dynamics. The platform captures in-the-moment behavioral reflections and
-      integrates wearable alerts to promote safer navigation in high-traffic environments.
+      Nias, J., Clay, K., Williams, M., & Campbell, K. (2025).
+      <i>Afrocomputation in Action: Building a Culturally Fluent AAVE Sentiment Lexicon.</i>
+      Proceedings of the 5th Biennial African Human Computer Interaction Conference, 438–442.
     </p>
+
+    <a href="https://dl.acm.org/doi/pdf/10.1145/3757232.3757337" target="_blank">
+      Paper
+    </a>
+  </div>
+</div>
+
+<div class="project">
+  <h4>From Àṣẹ to Ashe: Designing for Layered Meaning in Diasporic Knowledge Systems</h4>
+
+  <div class="meta">
+    Student: Thane Douglass • AfriCHI 2025
   </div>
 
-  <div class="project">
-    <h3>AAVE Slang in Large Language Models</h3>
-    <div class="meta">
-      Students: Thane Douglass, Ashley Hanes • AfriCHI 2025
-    </div>
+  <p>
+    This project explores how culturally layered terms such as Àṣẹ travel across African
+    and diasporic contexts. The work uses corpus analysis and annotation design to support
+    more context-aware computational treatment of diasporic knowledge.
+  </p>
+
+  <div class="outputs">
+    <strong>Publication:</strong>
+
     <p>
-      This project evaluates how large language models interpret African American
-      Vernacular English (AAVE). Findings highlight challenges in cultural context,
-      nuance, and linguistic representation, emphasizing the need for more inclusive
-      AI development practices.
+      Nias, J., Mason, E. A., Abímbọ́lá, K., & Douglass, T. (2025).
+      <i>From Àṣẹ to Ashe: Designing for Layered Meaning in Diasporic Knowledge Systems.</i>
+      Proceedings of the 5th Biennial African Human Computer Interaction Conference, 443–447.
     </p>
+
+    <a href="https://dl.acm.org/doi/pdf/10.1145/3757232.3757338" target="_blank">
+      Paper
+    </a>
+  </div>
+</div>
+
+  <div class="research-area">
+    <h3>Culturally Aligned AI and Symbolic Systems</h3>
+    <p>
+      This area focuses on symbolic mediation, cultural reasoning, and AI systems that use
+      culturally meaningful representations to support reflection, interpretation, and decision-making.
+    </p>
+
+    <div class="project">
+      <h4>CARE: Culturally Aligned AI for Reflective Creativity</h4>
+      <div class="meta">Students: Kamili Campbell, Janelle Yankey, Thane Douglass • AAAI Spring Symposium 2026</div>
+      <p>
+        CARE is a culturally grounded generative AI system that supports creative reflection
+        through Adinkra symbols and proverb-based interpretation. The system frames AI as a
+        partner in sensemaking rather than a source of prescriptive guidance.
+      </p>
+      <div class="outputs">
+        <strong>Outputs:</strong>
+        [Publication citation placeholder] •
+        <a href="#">Paper link</a> •
+        <a href="#">Poster link</a> •
+        <a href="#">Presentation link</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h4>Symbolic Mediation of Language-Based Decision Support in Tactical Contexts</h4>
+      <div class="meta">Student: Lashaun Baddol • AAAI Spring Symposium 2026</div>
+      <p>
+        This project investigates how language model outputs can be transformed into structured
+        symbolic representations for decision support. The framework preserves textual reasoning
+        while rendering decision-relevant elements through familiar symbolic forms.
+      </p>
+      <div class="outputs">
+        <strong>Outputs:</strong>
+        [Accepted for publication] •
+        <a href="#">Paper link</a>
+      </div>
+    </div>
   </div>
 
-  <div class="project">
-    <h3>AfroComputation Praxis in Sentiment Analysis</h3>
-    <div class="meta">
-      Students: Kaylin Clay, Myla Williams, Kamili Campbell • AfriCHI 2025
-    </div>
+  <div class="research-area">
+    <h3>Embodied, Human-Centered, and Educational Technologies</h3>
     <p>
-      This work applies AfroComputation Praxis to develop a culturally fluent sentiment
-      lexicon for AAVE. The project demonstrates how culturally grounded approaches
-      can reshape computational tools and challenge dominant assumptions in language processing.
+      This area develops technologies and learning experiences that connect computation to
+      embodied interaction, safety, culturally responsive education, and community-centered design.
     </p>
+
+    <div class="project">
+      <h4>Haptic Feedback for Tonal Language Learning</h4>
+      <div class="meta">Student: Kamili Campbell • NSEA 2025 • Howard Research Month 2025</div>
+      <p>
+        This project uses haptic feedback to support tonal language learning through a game-based
+        interface. Vibrational cues help users engage pitch variation in languages such as Yoruba
+        through a multi-sensory learning experience.
+      </p>
+      <div class="outputs">
+        <strong>Outputs:</strong>
+        [Poster citation placeholder] •
+        <a href="https://thedig.howard.edu/all-stories/howard-research-symposium-students-shared-impacts-their-work-georgia-avenue-moon" target="_blank">See our feature in The Dig </a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h4>CROSS AWARE: Smartwatch-Based Behavioral Monitoring for Pedestrian Safety</h4>
+      <div class="meta">Students: Kamili Campbell, Sarah Kabbo • DCQI 2025</div>
+      <p>
+        CROSS AWARE is a wearable-based system for studying pedestrian distraction and group
+        coordination near intersections. The project combines in-the-moment smartwatch input,
+        daily reflection, and behavioral nudges to support pedestrian safety research.
+      </p>
+      <div class="outputs">
+        <strong>Outputs:</strong>
+        [Poster citation placeholder] •
+        <a href="#">Poster link</a> •
+        <a href="#">Presentation link</a>
+      </div>
+    </div>
+
+<div class="project">
+  <h4>An AfroComputation Educational Praxis for Identity-Affirming Data Science</h4>
+
+  <div class="meta">
+    BICE 2025
   </div>
 
-  <div class="project">
-    <h3>Àṣẹ Across the Diaspora</h3>
-    <div class="meta">
-      Student: Thane Douglass • AfriCHI 2025
-    </div>
-    <p>
-      This case study examines the layered meanings of Àṣẹ across diasporic contexts and
-      explores how computational systems can better represent culturally embedded concepts
-      through contextual annotation and retrieval-based approaches.
-    </p>
-  </div>
+  <p>
+    This project presents a culturally grounded computing education model that integrates
+    AfroComputation Praxis into data science instruction. It shows how identity affirmation,
+    critical reflection, and technical skill-building can be aligned in computing education.
+  </p>
 
-  <div class="project">
-    <h3>AfroComputation Praxis in Computing Education</h3>
-    <div class="meta">
-      Paper: BICE 2025
-    </div>
-    <p>
-      This project presents a culturally grounded data science curriculum that integrates
-      AfroComputation Praxis into computing education. It highlights how identity, culture,
-      and technical skill-building can be meaningfully aligned.
-    </p>
-  </div>
+  <div class="outputs">
+    <strong>Publication:</strong>
 
-</section>
+    <p>
+      Nias, J. (2025).
+      <i>An AfroComputation Educational Praxis for Identity-Affirming Data Science through AAVE.</i>
+      In <i>2025 Black Issues in Computing Education (BICE)</i>, 32–36. IEEE.
+    </p>
+
+    <a href="https://ieeexplore.ieee.org/abstract/document/11363952" target="_blank">
+      Paper
+    </a>
+  </div>
+</div>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: jaye.nias@howard.edu</p>
+  <p>
+    For inquiries about the Brave IDEAS Lab, please contact:
+    <strong>jaye.nias@howard.edu</strong>
+  </p>
 </section>
 
 </body>
